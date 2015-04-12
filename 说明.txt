@@ -1,0 +1,14 @@
+该文件夹包含了本项目的全部内容
+
+包括:
+
+工程项目文件        MyPhysics.sln（vs2005解决方案）
+引擎ODE的源码       src文件夹中（工程中用的是编译成的静态库）
+软件安装包          Setup.rar
+演示视频            MyPhysics3D视频.wmv
+PPT演示文稿         MyPhysics3D.pptx
+
+运行时需要的纹理    textures目录
+源代码              MyPhysics目录
+各种文档和模型图    Files目录
+安装文件的工程      MyPhysicsSetup目录

@@ -1,0 +1,770 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MyPhysics.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\MyPhysics.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_ITEMBAR             BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_DELETE
+    BUTTON      ID_SET_STATIC
+    BUTTON      ID_SET_DYNAMIC
+    SEPARATOR
+    BUTTON      ID_SPECIFY_SCENE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_ITEMBAR TOOLBAR  40, 40
+BEGIN
+    BUTTON      ID_SPHERE
+    BUTTON      ID_BOX
+    BUTTON      ID_SLOPE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                     ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "物体(&B)"
+    BEGIN
+        POPUP "添加(&A)"
+        BEGIN
+            MENUITEM "球体(&S)\tCtrl+Shift+S",        ID_SPHERE
+            MENUITEM "长方体(&B)\tCtrl+Shift+B",       ID_BOX
+        END
+        MENUITEM "删除(&R)\tDEL",                 ID_DELETE
+        MENUITEM "静态设置(&S)\tF3",                ID_SET_STATIC
+        MENUITEM "动态设置(&D)\tF4",                ID_SET_DYNAMIC
+        MENUITEM "添加/移除斜面(&X)\tCtrl+Alt+X",     ID_SLOPE
+        MENUITEM "（Shift加鼠标右键上下拖动可调整斜面角度）",     ID_32798
+    END
+    POPUP "选择(&S)"
+    BEGIN
+        MENUITEM "取消选择(&C)\tESC",               ID_SELECT_CANCEL
+        MENUITEM "选择下一物体(&N)\tSpace",           ID_SELECT_NEXT
+        MENUITEM "（按住Shift点击鼠标左键可以选中物体）",       ID_32799
+        MENUITEM "（选中物体后按Ctrl拖动可移动物体）",         ID_32800
+    END
+    POPUP "设置(&O)"
+    BEGIN
+        MENUITEM "场景设置(&S)\tF2",                ID_SPECIFY_SCENE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 MyPhysics(&A)...",         ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "B",            ID_BOX,                 VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_ESCAPE,      ID_SELECT_CANCEL,       VIRTKEY, NOINVERT
+    VK_SPACE,       ID_SELECT_NEXT,         VIRTKEY, NOINVERT
+    VK_F4,          ID_SET_DYNAMIC,         VIRTKEY, NOINVERT
+    VK_F3,          ID_SET_STATIC,          VIRTKEY, NOINVERT
+    "X",            ID_SLOPE,               VIRTKEY, CONTROL, ALT, NOINVERT
+    VK_F2,          ID_SPECIFY_SCENE,       VIRTKEY, NOINVERT
+    "S",            ID_SPHERE,              VIRTKEY, SHIFT, CONTROL, NOINVERT
+    VK_DELETE,      ID_DELETE,              VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 64
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MyPhysics"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "My Physics 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "作者 Error",IDC_STATIC,40,41,51,8
+END
+
+IDD_MYPHYSICS_FORM DIALOGEX 0, 0, 585, 363
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "显示阴影",IDC_CHECK_SHADOW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,519,25,45,10
+    CONTROL         "显示纹理",IDC_CHECK_TEXTURE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,519,50,44,10
+    CONTROL         "显示力",IDC_CHECK_FORCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,519,92,35,10
+    PUSHBUTTON      "单步执行",IDC_STEP,519,146,50,20
+    CONTROL         "",IDC_SLIDER_SCALE,"msctls_trackbar32",TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,534,216,21,87
+    LTEXT           "力的标尺",IDC_STATIC,528,183,33,8
+    EDITTEXT        IDC_SCALE,524,197,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "暂停",IDC_PLAY_PAUSE,519,118,50,19
+    GROUPBOX        "视图面板",IDC_STATIC,505,7,73,309
+END
+
+IDD_DIALOG_BOX DIALOGEX 0, 0, 405, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "立方体设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,221,320,50,14
+    PUSHBUTTON      "取消",IDCANCEL,313,320,50,14
+    EDITTEXT        IDC_POSX,40,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSY,40,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSZ,40,56,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_R,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,98,100,15
+    CONTROL         "",IDC_SLIDER_G,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,117,100,15
+    CONTROL         "",IDC_SLIDER_B,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,137,100,15
+    CONTROL         "",IDC_SLIDER_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,157,100,15
+    CONTROL         "",IDC_SLIDER_PX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,17,100,15
+    CONTROL         "",IDC_SLIDER_PY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,36,100,15
+    CONTROL         "",IDC_SLIDER_PZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,55,100,15
+    EDITTEXT        IDC_MASS,40,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DENSITY,40,126,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,25,21,8,8
+    LTEXT           "Y",IDC_STATIC,25,40,8,8
+    LTEXT           "Z",IDC_STATIC,25,58,8,8
+    LTEXT           "质量",IDC_STATIC,19,107,17,8
+    LTEXT           "密度",IDC_STATIC,19,129,17,8
+    LTEXT           "红",IDC_STATIC,230,103,9,8
+    LTEXT           "绿",IDC_STATIC,230,122,9,8
+    LTEXT           "蓝",IDC_STATIC,230,141,9,8
+    LTEXT           "透明度",IDC_STATIC,222,160,25,8
+    GROUPBOX        "颜色",IDC_STATIC,201,86,189,213
+    GROUPBOX        "质量密度",IDC_STATIC,6,89,179,59
+    GROUPBOX        "位置坐标",IDC_STATIC,6,7,179,73
+    GROUPBOX        "大小",IDC_STATIC,201,7,185,73
+    CONTROL         "",IDC_SLIDER_MASS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,104,100,15
+    CONTROL         "",IDC_SLIDER_DENSITY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,79,124,100,15
+    LTEXT           "长",IDC_STATIC,215,20,9,8
+    EDITTEXT        IDC_SX,230,17,40,14,ES_AUTOHSCROLL
+    LTEXT           "宽",IDC_STATIC,215,39,9,8
+    EDITTEXT        IDC_SY,230,36,40,14,ES_AUTOHSCROLL
+    LTEXT           "高",IDC_STATIC,215,57,9,8
+    EDITTEXT        IDC_SZ,230,55,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_SX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,270,17,100,15
+    CONTROL         "",IDC_SLIDER_SY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,270,35,100,15
+    CONTROL         "",IDC_SLIDER_SZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,270,54,100,15
+    GROUPBOX        "预览",IDC_STATIC,219,183,150,105
+    GROUPBOX        "物体朝向",IDC_STATIC,6,159,180,162
+    EDITTEXT        IDC_R00,59,221,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R01,93,221,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R02,127,221,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R10,59,241,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R11,93,241,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R12,127,241,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R20,59,261,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R21,93,261,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R22,127,261,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q0,39,288,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q1,76,288,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q2,112,288,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q3,148,288,32,14,ES_AUTOHSCROLL
+    LTEXT           "cos(θ/2)",IDC_STATIC,39,305,28,8
+    LTEXT           "Xsin(θ/2)",IDC_STATIC,75,305,30,8
+    LTEXT           "Ysin(θ/2)",IDC_STATIC,113,305,30,8
+    LTEXT           "Zsin(θ/2)",IDC_STATIC,150,305,30,8
+    EDITTEXT        IDC_AAAX,52,187,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AAAY,84,187,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AAAZ,116,187,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AAAS,148,187,31,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,66,204,8,8
+    LTEXT           "Y",IDC_STATIC,98,204,8,8
+    LTEXT           "Z",IDC_STATIC,129,204,8,8
+    LTEXT           "θ",IDC_STATIC,161,204,8,8
+    LTEXT           "轴和角",IDC_STATIC,17,189,25,8
+    LTEXT           "旋转矩阵",IDC_STATIC,14,223,33,8
+    LTEXT           "四元数",IDC_STATIC,11,290,25,8
+    CONTROL         "度",IDC_RADIO_DEG,"Button",BS_AUTORADIOBUTTON | WS_GROUP,108,172,24,10
+    CONTROL         "弧度",IDC_RADIO_RAD,"Button",BS_AUTORADIOBUTTON,144,172,32,10
+END
+
+IDD_DIALOG_SPHERE DIALOGEX 0, 0, 405, 353
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "球体设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,221,320,50,14
+    PUSHBUTTON      "取消",IDCANCEL,313,320,50,14
+    EDITTEXT        IDC_POSX,40,18,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSY,40,37,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSZ,40,56,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_R,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,98,100,15
+    CONTROL         "",IDC_SLIDER_G,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,117,100,15
+    CONTROL         "",IDC_SLIDER_B,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,137,100,15
+    CONTROL         "",IDC_SLIDER_ALPHA,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,249,157,100,15
+    CONTROL         "",IDC_SLIDER_PX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,17,100,15
+    CONTROL         "",IDC_SLIDER_PY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,36,100,15
+    CONTROL         "",IDC_SLIDER_PZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,55,100,15
+    EDITTEXT        IDC_MASS,40,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DENSITY,40,126,40,14,ES_AUTOHSCROLL
+    LTEXT           "X",-1,25,21,8,8
+    LTEXT           "Y",-1,25,40,8,8
+    LTEXT           "Z",-1,25,58,8,8
+    LTEXT           "质量",-1,19,107,17,8
+    LTEXT           "密度",-1,19,129,17,8
+    LTEXT           "红",-1,230,103,9,8
+    LTEXT           "绿",-1,230,122,9,8
+    LTEXT           "蓝",-1,230,141,9,8
+    LTEXT           "透明度",-1,222,160,25,8
+    GROUPBOX        "颜色",-1,201,86,189,213
+    GROUPBOX        "质量密度",-1,6,89,179,59
+    GROUPBOX        "位置坐标",-1,6,7,179,73
+    GROUPBOX        "大小",-1,201,7,185,73
+    CONTROL         "",IDC_SLIDER_MASS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,104,100,15
+    CONTROL         "",IDC_SLIDER_DENSITY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,124,100,15
+    LTEXT           "半径",-1,212,39,17,8
+    EDITTEXT        IDC_SR,230,36,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER_SR,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,270,35,100,15
+    GROUPBOX        "预览",-1,219,183,150,105
+    GROUPBOX        "物体朝向",-1,6,159,180,162
+    EDITTEXT        IDC_R00,59,221,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R01,93,221,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R02,127,221,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R10,59,241,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R11,93,241,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R12,127,241,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R20,59,261,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R21,93,261,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_R22,127,261,25,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q0,39,288,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q1,76,288,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q2,112,288,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Q3,148,288,32,14,ES_AUTOHSCROLL
+    LTEXT           "cos(θ/2)",-1,39,305,28,8
+    LTEXT           "Xsin(θ/2)",-1,75,305,30,8
+    LTEXT           "Ysin(θ/2)",-1,113,305,30,8
+    LTEXT           "Zsin(θ/2)",-1,150,305,30,8
+    EDITTEXT        IDC_AAAX,52,187,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AAAY,84,187,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AAAZ,116,187,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AAAS,148,187,31,14,ES_AUTOHSCROLL
+    LTEXT           "X",-1,65,204,8,8
+    LTEXT           "Y",-1,98,204,8,8
+    LTEXT           "Z",-1,129,204,8,8
+    LTEXT           "θ",-1,161,204,8,8
+    LTEXT           "轴和角",-1,17,189,25,8
+    LTEXT           "旋转矩阵",-1,14,223,33,8
+    LTEXT           "四元数",-1,11,290,25,8
+    CONTROL         "度",IDC_RADIO_DEG,"Button",BS_AUTORADIOBUTTON | WS_GROUP,108,172,24,10
+    CONTROL         "弧度",IDC_RADIO_RAD,"Button",BS_AUTORADIOBUTTON,144,172,32,10
+END
+
+IDD_DIALOG_WORLD DIALOGEX 0, 0, 358, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "场景属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,200,161,50,14
+    PUSHBUTTON      "取消",IDCANCEL,267,161,50,14
+    EDITTEXT        IDC_EDIT_G,90,32,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MU,265,32,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_R,265,106,45,14,ES_AUTOHSCROLL
+    LTEXT           "重力加速度 g",IDC_STATIC,39,34,47,8
+    LTEXT           "摩擦系数 μ",IDC_STATIC,207,34,39,8
+    EDITTEXT        IDC_EDIT_LDAMPING,90,75,45,14,ES_AUTOHSCROLL
+    LTEXT           "弹性恢复系数 r",IDC_STATIC,206,107,54,8
+    EDITTEXT        IDC_EDIT_ADAMPING,90,120,45,14,ES_AUTOHSCROLL
+    LTEXT           "线性阻尼 L ζ",IDC_STATIC,39,76,43,8
+    LTEXT           "旋转阻尼 A ζ",IDC_STATIC,39,122,44,8
+    CONTROL         "",IDC_SLIDER_G,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,46,100,15
+    CONTROL         "",IDC_SLIDER_MU,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,213,50,100,15
+    CONTROL         "",IDC_SLIDER_R,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,212,124,100,15
+    CONTROL         "",IDC_SLIDER_LDAMPING,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,89,100,15
+    CONTROL         "",IDC_SLIDER_ADAMPING,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,38,135,100,15
+    GROUPBOX        "各个物体间",IDC_STATIC,189,16,137,134
+    GROUPBOX        "世界",IDC_STATIC,7,16,170,158
+    CONTROL         "摩擦系数无穷大",IDC_CHECK_INFINITY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,245,72,71,10
+    LTEXT           "（阻尼对之后创建的物体才有效）",IDC_STATIC,30,163,121,8
+END
+
+IDD_DIALOG_SLOPE DIALOGEX 0, 0, 262, 326
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "斜面设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,68,289,50,14
+    PUSHBUTTON      "取消",IDCANCEL,143,289,50,14
+    EDITTEXT        IDC_EDIT1,60,34,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,60,60,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,60,106,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,60,140,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,60,174,40,14,ES_AUTOHSCROLL
+    LTEXT           "长",IDC_STATIC,35,108,9,8
+    LTEXT           "宽",IDC_STATIC,35,142,9,8
+    LTEXT           "度",IDC_STATIC,35,37,9,8
+    LTEXT           "厚度",IDC_STATIC,35,176,17,8
+    LTEXT           "弧度",IDC_STATIC,35,63,17,8
+    GROUPBOX        "倾角",IDC_STATIC,18,17,228,68
+    GROUPBOX        "尺寸",IDC_STATIC,17,90,229,116
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,126,35,100,15
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,126,104,100,15
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,126,138,100,15
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,126,172,100,15
+    LTEXT           "鼠标右键上下拖动可调整角度）",IDC_STATIC,126,66,113,8
+    LTEXT           "（创建后按住SHIFT并用",IDC_STATIC,132,54,84,8
+    GROUPBOX        "传送带",IDC_STATIC,17,215,230,69
+    CONTROL         "向上",IDC_RADIO_UP,"Button",BS_AUTORADIOBUTTON | WS_GROUP,77,236,28,10
+    CONTROL         "向下",IDC_RADIO_DOWN,"Button",BS_AUTORADIOBUTTON,134,236,27,10
+    LTEXT           "方向",IDC_STATIC,35,236,17,8
+    LTEXT           "速度大小",IDC_STATIC,29,260,33,8
+    EDITTEXT        IDC_EDIT_VEL,71,257,40,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SLIDER5,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,125,256,100,15
+END
+
+IDD_DYNAMIC DIALOGEX 0, 0, 256, 246
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "物体动态设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,63,216,50,14
+    PUSHBUTTON      "取消",IDCANCEL,141,216,50,14
+    EDITTEXT        IDC_VLX,60,28,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VLY,115,28,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VLZ,170,28,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAX,60,52,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAY,115,52,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VAZ,170,52,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ILX,60,93,45,14,ES_AUTOHSCROLL
+    LTEXT           "角速度",IDC_STATIC,28,54,24,8
+    LTEXT           "线速度",IDC_STATIC,28,30,24,8
+    EDITTEXT        IDC_ILY,115,93,45,14,ES_AUTOHSCROLL
+    LTEXT           "冲量",IDC_STATIC,35,95,17,8
+    LTEXT           "力",IDC_STATIC,41,160,11,8
+    LTEXT           "力矩",IDC_STATIC,34,184,18,8
+    LTEXT           "冲量距",IDC_STATIC,28,119,24,8
+    EDITTEXT        IDC_ILZ,170,93,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IAX,60,117,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IAY,115,117,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IAZ,170,117,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLX,60,158,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLY,115,158,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLZ,170,158,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FAX,60,182,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FAY,115,182,45,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FAZ,170,182,45,14,ES_AUTOHSCROLL
+    GROUPBOX        "速度设置",IDC_STATIC,16,14,217,60
+    GROUPBOX        "添加瞬时冲量",IDC_STATIC,16,80,217,60
+    GROUPBOX        "设置恒力",IDC_STATIC,16,146,217,60
+    LTEXT           "X",IDC_STATIC,73,7,8,8
+    LTEXT           "Y",IDC_STATIC,116,7,8,8
+    LTEXT           "Z",IDC_STATIC,159,7,8,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "MyPhysics.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "MyPhysics.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_MYPHYSICS_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 578
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 356
+    END
+
+    IDD_DIALOG_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 390
+        VERTGUIDE, 40
+        VERTGUIDE, 80
+        VERTGUIDE, 120
+        VERTGUIDE, 230
+        VERTGUIDE, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_DIALOG_SPHERE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 390
+        VERTGUIDE, 40
+        VERTGUIDE, 80
+        VERTGUIDE, 120
+        VERTGUIDE, 230
+        VERTGUIDE, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 334
+    END
+
+    IDD_DIALOG_WORLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 351
+        VERTGUIDE, 90
+        VERTGUIDE, 135
+        VERTGUIDE, 265
+        VERTGUIDE, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_DIALOG_SLOPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 255
+        VERTGUIDE, 60
+        VERTGUIDE, 100
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 319
+    END
+
+    IDD_DYNAMIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 16
+        VERTGUIDE, 60
+        VERTGUIDE, 105
+        VERTGUIDE, 115
+        VERTGUIDE, 160
+        VERTGUIDE, 170
+        VERTGUIDE, 215
+        VERTGUIDE, 233
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 239
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "MyPhysics\n\nMyPhysics\nMyPhysics Files (*.scn)\n.scn\nMyPhysics.Document\nMyPhysics.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MyPhysics"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BOX                  "\n添加长方体"
+    ID_SPHERE               "\n添加球体"
+    ID_SLOPE                "\n添加/移除斜面"
+    ID_SPECIFY_SCENE        "\n场景设置"
+    ID_DELETE               "\n删除物体"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SET_STATIC           "\n物体静态"
+    ID_SET_DYNAMIC          "\n物体动态"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MyPhysics.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

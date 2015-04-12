@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MyPhysics">
+</Property><Property Name="Solution File" Value="F:\my work\MyPhysics3D\MyPhysics.sln">
+</Property><Property Name="User Options File" Value="F:\my work\MyPhysics3D\MyPhysics.suo">
+</Property><Property Name="Date" Value="2011年7月5日">
+</Property><Property Name="Time" Value="23:36">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MyPhysics.sln" Description="File successfully backed up as F:\my work\MyPhysics3D\MyPhysics.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="MyPhysics.suo" Description="File successfully backed up as F:\my work\MyPhysics3D\MyPhysics.suo.old">
+</Event><Event ErrorLevel="0" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="Converting project file 'F:\my work\MyPhysics3D\MyPhysics\MyPhysics.vcproj'.">
+</Event><Event ErrorLevel="1" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="This application has been updated to include settings related to the User Account Control (UAC) feature of Windows Vista. By default, when run on Windows Vista with UAC enabled, this application is marked to run with the same privileges as the process that launched it. This marking also disables the application from running with virtualization. You can change UAC related settings from the Property Pages of the project.">
+</Event><Event ErrorLevel="1" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="Web deployment to the local IIS server is no longer supported. The Web Deployment build tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="Attribute 'Detect64BitPortabilityProblems' of 'VCCLCompilerTool' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="Done converting to new project file 'F:\my work\MyPhysics3D\MyPhysics\MyPhysics.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="MyPhysics" Source="MyPhysics\MyPhysics.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MyPhysics.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MyPhysics.sln" Description="Converted">
+</Event></UpgradeLog>

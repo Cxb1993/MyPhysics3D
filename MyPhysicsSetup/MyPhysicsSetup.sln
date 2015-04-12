@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "MyPhysicsSetup", "MyPhysicsSetup\MyPhysicsSetup.vdproj", "{25D7FC6D-0003-4D89-8B30-E8882C037F9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25D7FC6D-0003-4D89-8B30-E8882C037F9A}.Debug|Default.ActiveCfg = Debug
+		{25D7FC6D-0003-4D89-8B30-E8882C037F9A}.Debug|Default.Build.0 = Debug
+		{25D7FC6D-0003-4D89-8B30-E8882C037F9A}.Release|Default.ActiveCfg = Release
+		{25D7FC6D-0003-4D89-8B30-E8882C037F9A}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
